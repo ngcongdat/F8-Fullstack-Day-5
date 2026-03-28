@@ -1,0 +1,164 @@
+/* ======== FORM CSS ======== */
+.reg-container {
+    background: #f0f0f0;
+    padding: 10rem 0;
+}
+.reg-wrapper {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2.4rem 3rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.reg-wrapper:focus-within {
+    box-shadow: #6cff737e 0px 0px 20px;
+}
+
+.reg-header {
+    text-align: center;
+}
+
+.reg-header img {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.reg-header h1 {
+    font-size: 2rem;
+    margin: 15px 0 10px;
+}
+
+.reg-header p {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.reg-form {
+    margin-top: 30px;
+}
+
+.reg-form label {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.reg-form .required-input:after {
+    content: "*";
+    color: #f00;
+}
+
+.reg-form input {
+    margin: 6px 0;
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    outline: none;
+}
+
+.reg-form input:focus {
+    outline: 1px solid #6cff737e;
+    border: 1px solid #6cff74;
+}
+
+.reg-form input:not(:placeholder-shown):invalid {
+    outline: 1px solid #ff2e2e82;
+    border: 1px solid #ff2e2e;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-col {
+    width: 48%;
+}
+
+.option-item {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+.option-item input {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    accent-color: #6cff74;
+    cursor: pointer;
+}
+
+.option-item input:focus,
+.reg-form input:not(:placeholder-shown):invalid {
+    outline: none;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.avatar img {
+    width: 5rem;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 30px;
+}
+
+.btn {
+    transition: 0.6s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.submit-btn {
+    width: 60%;
+    height: 30px;
+    padding: 6px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+    border: 0;
+    background: #6cff74;
+}
+
+.submitting {
+    display: none;
+}
+
+.submit-btn:active .submitting {
+    display: block;
+}
+
+.submit-btn:active .waiting-submit {
+    display: none;
+}
+
+.submit p {
+    margin: 24px 0;
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.login a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login a:hover {
+    color: #6cff74;
+}

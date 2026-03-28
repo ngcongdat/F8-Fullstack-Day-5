@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common-style.css" />
+        <link rel="stylesheet" href="./css/form-style.css" />
+    </head>
+    <body>
+        <div class="reg-container">
+            <div class="reg-wrapper">
+                <div class="reg-header">
+                    <img src="./img/img-logo.webp" alt="Logo" />
+                    <h1>Register</h1>
+                    <p>
+                        Sign up today and unlock a world of possibilities. Your
+                        adventure begins here.
+                    </p>
+                </div>
+                <div class="reg-form">
+                    <form
+                        enctype="multipart/form-data"
+                        autocomplete="off"
+                        action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                    >
+                        <div class="form-group">
+                            <label for="display-name" class="required-input">
+                                Display Name
+                            </label>
+                            <input
+                                type="text"
+                                placeholder="Enter your display name"
+                                name="display-name"
+                                id="display-name"
+                                spellcheck="false"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="required-input">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                name="email"
+                                id="email"
+                                spellcheck="false"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="required-input">
+                                Phone Number
+                            </label>
+                            <input
+                                type="tel"
+                                placeholder="Enter your phone number"
+                                name="phone"
+                                id="phone"
+                                spellcheck="false"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <label
+                                        for="password"
+                                        class="required-input"
+                                    >
+                                        Password
+                                    </label>
+                                    <input
+                                        type="password"
+                                        placeholder="Enter your password"
+                                        name="password"
+                                        id="password"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-col">
+                                    <label
+                                        for="confirm-password"
+                                        class="required-input"
+                                    >
+                                        Confirm Password
+                                    </label>
+                                    <input
+                                        type="password"
+                                        placeholder="Confirm your password"
+                                        name="confirm-password"
+                                        id="confirm-password"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="form-col gender">
+                                    <label class="required-input">
+                                        Gender
+                                    </label>
+                                    <div class="gender-item option-item">
+                                        <input
+                                            id="male"
+                                            type="radio"
+                                            name="gender"
+                                            value="male"
+                                            required
+                                        />
+                                        <label for="male">Nam</label>
+                                    </div>
+                                    <div class="gender-item option-item">
+                                        <input
+                                            id="female"
+                                            type="radio"
+                                            name="gender"
+                                            value="female"
+                                        />
+                                        <label for="female">Nữ</label>
+                                    </div>
+                                    <div class="gender-item option-item">
+                                        <input
+                                            id="other"
+                                            type="radio"
+                                            name="gender"
+                                            value="other"
+                                        />
+                                        <label for="other">Khác</label>
+                                    </div>
+                                </div>
+                                <div class="form-col">
+                                    <label>
+                                        Date of Birth
+                                        <input type="date" name="birthday" />
+                                    </label>
+                                    <label class="avatar">
+                                        Avatar
+                                        <img
+                                            src="./img/img-avatar-placeholder.png"
+                                            alt="avatar"
+                                        />
+                                        <input
+                                            type="file"
+                                            name="avatar"
+                                            hidden
+                                            accept="image/*"
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="required-input">
+                                Address
+                            </label>
+                            <input
+                                type="text"
+                                placeholder="Enter your address"
+                                name="address"
+                                id="address"
+                                spellcheck="false"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label>Communication Preferences</label>
+                            <div class="preferences-item option-item">
+                                <input
+                                    type="checkbox"
+                                    name="subscribe-to-newsletter"
+                                    id="subscribe-to-newsletter"
+                                    value="true"
+                                />
+                                <label for="subscribe-to-newsletter">
+                                    Subscribe to Newsletter
+                                </label>
+                            </div>
+                            <div class="preferences-item option-item">
+                                <input
+                                    type="checkbox"
+                                    name="receive-promotional-emails"
+                                    id="receive-promotional-emails"
+                                    value="true"
+                                />
+                                <label for="receive-promotional-emails">
+                                    Receive Promotional Emails
+                                </label>
+                            </div>
+                            <div class="preferences-item option-item">
+                                <input
+                                    type="checkbox"
+                                    name="get-product-updates"
+                                    id="get-product-updates"
+                                    value="true"
+                                />
+                                <label for="get-product-updates">
+                                    Get Product Updates
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group submit">
+                            <button class="submit-btn btn" type="submit">
+                                <span class="waiting-submit">Sign Up</span>
+                                <span class="submitting">Signing Up...</span>
+                            </button>
+
+                            <div class="login">
+                                <p>
+                                    Already have an account?
+                                    <a href="#!"><strong>Log in</strong></a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
