@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    font-weight: bold;
+}
+
+.container {
+    padding: 100px 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.blog::selection {
+    background: #7285ff;
+    color: #fff;
+}
+
+.blog h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h2:not(h1) {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.blog figure {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.blog figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #ddd;
+    margin-top: 4px;
+}
+
+.blog p,
+.blog blockquote,
+.comment p {
+    line-height: 1.6;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+}
+
+.blog p:first-of-type::first-letter {
+    font-size: 200%;
+    font-weight: 900;
+    font-style: italic;
+    line-height: normal;
+}
+
+.blog p::first-line {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.blog blockquote {
+    font-style: italic;
+    padding: 10px;
+    background: #eee;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #888;
+    border-left: 3px solid rgb(255, 175, 166);
+}
+
+.blog blockquote::before {
+    content: "“";
+    font-size: 5rem;
+}
+
+.comment p {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.comment p:hover {
+    box-shadow:
+        rgba(0, 0, 0, 0.16) 0px 1px 4px,
+        rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+p:nth-of-type(odd) {
+    border: 0.5px solid #eee;
+}
+
+p:nth-of-type(even) {
+    border: 0.5px dashed #eee;
+}
