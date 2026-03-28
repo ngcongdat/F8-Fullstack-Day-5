@@ -1,0 +1,61 @@
+/* ======== MENU CSS ======== */
+.nav {
+    background: #3f5cca;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.nav-items .item {
+    padding: 32px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nav-items .item a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    gap: 5px;
+}
+
+.nav-items .item:hover {
+    background: #304db7;
+}
+
+.nav-items .item:active {
+    background: #fff;
+}
+
+.nav-items .item:active a {
+    color: #000;
+}
+
+.nav-items .item::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-items .item:last-child::after {
+    display: none;
+}
+
+.nav-items .item a::before {
+    content: "\25B6";
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.nav-items .item:hover a::before {
+    rotate: 90deg;
+}
